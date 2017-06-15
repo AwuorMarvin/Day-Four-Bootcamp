@@ -1,3 +1,4 @@
+import math
 class BinarySearch(list):
     """This class inherits from python's list class"""
     def __init__(self, a, b):
@@ -29,7 +30,7 @@ class BinarySearch(list):
 
         while first <= last:
         #Binary search
-            mid = (first + last)//2
+            mid = math.floor((first + last) / 2)
 
             if self[mid] == value:
                 index = mid
